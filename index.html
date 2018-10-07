@@ -11,6 +11,9 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -18,222 +21,249 @@
 
 <body>
 <!-- ~~~~~~~~~~~~~~~~~~~~barre réservation~~~~~~~~~~~~~~~~~~~~~ -->
-  <div class="searchBar">
-    <aside class="">
-      <i class="fab fa-facebook-f"></i>
-      <i class="far fa-envelope"></i>
-      <i class="fas fa-map-marker-alt"></i>
-    </aside>
+  <div class="blockFixe">
+    <div class="searchBar d-flex">
+      <aside class="d-flex spaceIcon">
+        <div class="iconNav">
+          <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="iconNav borderIcon">
+          <a class="envelope" href="#"><i class="far fa-envelope"></i></a>
+        </div>
+        <div class="iconNav">
+          <a class="map" href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </aside>
 
-    <aside class="">
-      <form class="" action="index.html" method="post">
-        <select class="" name="">
-          <option value="0">une séance d'atelier</option>
-          <option value="1">un cour de badminton</option>
-          <option value="2">une scéance U.V.</option>
-        </select>
-        <button type="button" name="button">GO</button>
-      </form>
-    </aside>
+      <aside class="">
+        <form class="" action="index.html" method="post">
+          Réserver : <select class="" name="r">
+            <option value="0">une séance d'atelier</option>
+            <option value="1">un cour de badminton</option>
+            <option value="2">une scéance U.V.</option>
+          </select>
+          <button class="buttonFixe" type="button" name="button">GO</button>
+        </form>
+      </aside>
+    </div>
   </div>
 <!-- ~~~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~ -->
 </header>
   <header>
     <nav>
-      <ul>
-        <li><img src="img/ocea.png" alt=""></li>
-        <li><a href="#">sport</a></li>
-        <li><a href="#">esthetique</a></li>
-        <li><a href="#">centre u.v.</a></li>
-        <li><a href="#">nous contacter</a></li>
+      <ul class="list d-flex sizeNavbar">
+        <a href="#"><img src="img/ocea.png" alt=""></a>
+        <li class="borderRight sizeLi"><a class="designA" href="#">sport</a></li>
+        <li class="borderRight sizeLi"><a class="designA" href="#">esthetique</a></li>
+        <li class="borderRight sizeLi"><a class="designA" href="#">centre u.v.</a></li>
+        <li class="sizeLi"><a class="designA" href="#">nous contacter</a></li>
       </ul>
     </nav>
 
-    <div class="">
-      <div class="">
-        <p>« <b>Nous sommes</b> <a href="#">Ocea</a>. Nous représentons fièrement la pratique du fitness sur Lille et ses alentours.<br>
+    <div id="slider">
+      <figure>
+       <img src="img/shbam.jpg" alt>
+       <img src="img/bodybalance.jpg" alt>
+       <img src="img/bodypump.jpg" alt>
+       <img src="img/rpm.jpg" alt>
+       <img src="img/shbam.jpg" alt>
+      </figure>
+      <div class="textImg d-flex">
+        <div class="sizeParagrapheImg">
+          <p>« <b>Nous sommes</b> <a class="colorPink" href="#">Ocea</a>. Nous représentons fièrement la pratique du fitness sur Lille et ses alentours.<br>
           Le sport est notre métier mais c'est avant tout <b>notre passion</b>. Nous sommes un grand club - mais à taille humaine - où chacun des membres de notre grande famille se met au service de notre lutte contre la sédentarité.<br>
           <b>Vous satisfaire est notre priorité</b> de tous les jours. Nous ne vous proposons pas de cours sur écran mais <b>plus de 100 cours collectifs par semaine</b> encadrés par des éducateurs sportifs diplômés.<br>
-          Nous connaissons les prénoms de nos adhérents. Nous sommes des passionnés. Nous sommes <a href="#">Ocea</a>.»</p>
-          <p>Bienvenue</p>
+          Nous connaissons les prénoms de nos adhérents. Nous sommes des passionnés. Nous sommes <a class="colorPink" href="#">Ocea</a>.»<span class="Bienvenue">- Bienvenue !</span></p>
+        </div>
       </div>
     </div>
+
   </header>
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~start main~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <main>
-    <section>
-      <h2>Ocea Sport</h2>
-      <div class="">
-        <div class="">
+    <section class="d-flex f-column colorWhite backgroundPink">
+      <h2 class="textAlign marginBlock">Ocea Sport</h2>
+      <div class="d-flex sizeCard marginBlock">
+        <div class="card d-flex f-column marginTop">
           <div class="fa fa-5x">
             <p class="iconeSeven">7/7</p>
           </div>
-          <p>Un club ouvert <b>7 jours sur 7</b></p>
+          <p class="textAlign">Un club ouvert <b>7 jours sur 7</b></p>
         </div>
-        <div class="">
+        <div class="card d-flex f-column">
           <i class="fa fa-list-alt fa-5x"></i>
-          <p>Plus de <b>100 cours collectifs</b> chaque semaine</p>
+          <p class="textAlign">Plus de <b>100 cours collectifs</b> chaque semaine</p>
         </div>
-        <div class="">
+        <div class="card d-flex f-column">
           <i class="fas fa-bicycle fa-5x"></i>
-          <p><b>6 salles</b> dont un studio RPM avec plus de <b>70 vélos</b></p>
+          <p class="textAlign"><b>6 salles</b> dont un studio RPM avec plus de <b>70 vélos</b></p>
         </div>
-        <div class="">
+        <div class="card d-flex f-column marginTop">
           <i class="fas fa-arrows-alt-h fa-5x"></i>
-          <p><b>7000 m²</b> d'infrastructures</p>
+          <p class="textAlign"><b>7000 m²</b> d'infrastructures</p>
         </div>
       </div>
-      <a href="#">TESTEZ-NOUS</a>
+      <div class="d-flex j-center marginBlock">
+        <a class="textAlign aButton" href="#">TESTEZ-NOUS !</a>
+      </div>
     </section>
 
     <!-- video -->
-    <section>
+    <section class="blockVideo">
       <h3>Notre contrat</h3>
-      <p><b>Pas de sentiment d'abandon à Ocea</b> ! Nos nombreux éducateurs sportifs, tous diplômés d'état, sont à votre disposition <b>pour atteindre vos objectifs, vous conseiller et vous guider</b> tout au long de votre entrainement.</p>
-      <iframe src="https://player.vimeo.com/video/272767022?app_id=122963" width="640" height="360" frameborder="0" title="Be YOURSELF - By Ocea" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      <p class="marginBlock"><b>Pas de sentiment d'abandon à Ocea</b> ! Nos nombreux éducateurs sportifs, tous diplômés d'état, sont à votre disposition <b>pour atteindre vos objectifs, vous conseiller et vous guider</b> tout au long de votre entrainement.</p>
+      <div class="textAlign marginVideo">
+        <iframe src="https://player.vimeo.com/video/272767022?app_id=122963" width="640" height="360" frameborder="0" title="Be YOURSELF - By Ocea" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </div>
     </section>
 
     <!-- card section -->
-    <section>
+    <section class="backgroundPink colorWhite">
+      <div class="d-flex containerCard paddingCard">
+        <!-- first card -->
+        <article class="cardPicture">
+          <div class="d-flex j-center opacityTitle">
+            <h4>le planning</h4>
+          </div>
+          <div class="">
+            <img class="picture" src="img/planning.jpg" alt="">
+          </div>
+          <div class="">
+            <p>Plus de 100 cours collectifs à votre disposition</p>
+          </div>
+          <div class="d-flex j-center marginA buttonWhite">
+            <a class="colorBlack" href="#">Le planning</a>
+          </div>
+        </article>
 
-      <!-- first card -->
-      <article class="">
-        <div class="">
-          <h4>le planning</h4>
-        </div>
-        <div class="">
-          <img src="img/planning.jpg" alt="">
-        </div>
-        <div class="">
-          <p>Plus de 100 cours collectifs à votre disposition</p>
-        </div>
-        <div class="">
-          <a href="#">Le planning</a>
-        </div>
-      </article>
+        <!-- second card -->
+        <article class="cardPicture">
+          <div class="d-flex j-center opacityTitle">
+            <h4>Les cours</h4>
+          </div>
+          <div class="">
+            <img class="picture" src="img/cours.jpg" alt="">
+          </div>
+          <div class="">
+            <p>20 types de cours différents et ce qui se fait de meilleur au monde</p>
+          </div>
+          <div class="d-flex j-center marginA buttonWhite">
+            <a class="colorBlack" href="#">Les cours</a>
+          </div>
+        </article>
 
-      <!-- second card -->
-      <article class="">
-        <div class="">
-          <h4>Les cours</h4>
-        </div>
-        <div class="">
-          <img src="img/cours.jpg" alt="">
-        </div>
-        <div class="">
-          <p>20 types de cours différents et ce qui se fait de meilleur au monde</p>
-        </div>
-        <div class="">
-          <a href="#">Les cours</a>
-        </div>
-      </article>
+        <!-- third card -->
+        <article class="cardPicture">
+          <div class="d-flex j-center opacityTitle">
+            <h4>Les tarifs</h4>
+          </div>
+          <div class="">
+            <img class="picture" src="img/tarifs.jpg" alt="">
+          </div>
+          <div class="">
+            <p>Nous avons forcément le meilleur tarif adapté à vos ambitions</p>
+          </div>
+          <div class="d-flex j-center marginA buttonWhite">
+            <a class="colorBlack" href="#">Les tarifs</a>
+          </div>
+        </article>
 
-      <!-- third card -->
-      <article class="">
-        <div class="">
-          <h4>Les tarifs</h4>
-        </div>
-        <div class="">
-          <img src="img/tarifs.jpg" alt="">
-        </div>
-        <div class="">
-          <p>Nous avons forcément le meilleur tarif adapté à vos ambitions</p>
-        </div>
-        <div class="">
-          <a href="#">Les tarifs</a>
-        </div>
-      </article>
-
-      <!-- fourth card -->
-      <article class="">
-        <div class="">
-          <h4>L'offre découverte</h4>
-        </div>
-        <div class="">
-          <img src="img/decouverte.jpg" alt="">
-        </div>
-        <div class="">
-          <p>A Ocea, votre première séance vous est offerte</p>
-        </div>
-        <div class="">
-          <a href="#">L'offre découverte</a>
-        </div>
-      </article>
+        <!-- fourth card -->
+        <article class="cardPicture">
+          <div class="d-flex j-center opacityTitle">
+            <h4>L'offre découverte</h4>
+          </div>
+          <div class="">
+            <img class="picture" src="img/decouverte.jpg" alt="">
+          </div>
+          <div class="">
+            <p>A Ocea, votre première séance vous est offerte</p>
+          </div>
+          <div class="d-flex j-center marginA buttonWhite">
+            <a class="colorBlack" href="#">Voir l'offre</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- timetable -->
-    <section class="">
-      <h3>Les horaires</h3>
+    <div class="d-flex sizeTimetable">
+      <section class="horaires">
+        <h3>Les horaires</h3>
         <ul>
           <li>Du lundi au jeudi de <b>9h</b> à <b>21h30</b></li>
           <li>Le vendredi de <b>9h</b> à <b>21h</b></li>
           <li>Le samedi et le dimanche de <b>9h</b> à <b>20h</b></li>
         </ul>
-        <!-- trouver le bouton num -->
-        <a href="tel:0320470303">tel: 03.20.47.03.03</a>
-    </section>
+        <p>Tel : <a class="colorPink" href="tel:0320470303">03.20.47.03.03</a></p>
+      </section>
 
-    <section>
-      <h3>S'y rendre</h3>
-      <p>51 rue de la Cimaise</br>
-      Villeneuve d'ascq</p>
-      <a href="#">Accès</a>
-    </section>
+      <section class="adresse">
+        <h3>S'y rendre</h3>
+        <p>51 rue de la Cimaise</br>
+          Villeneuve d'ascq</p>
+        <p>>><a class="colorPink" href="#">Accès</a></p>
+      </section>
+    </div>
   </main>
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~start footer~~~~~~~~~~~~~~~~~~~~~~ -->
   <footer>
 
-    <section>
-      <h4>Ocea</h4>
-      <ul>
-        <li>51 rue de la Cimaise</li>
-        <li>59650 Villeneuve d'Ascq</li>
-        <li>03.20.47.03.03</li>
-        <li>accueil at oceaclub.com</li>
-      </ul>
-    </section>
+    <div class="backgroundColorGrey">
+      <div class="d-flex sizeFooter colorWhite">
+        <section class="cardFooter">
+          <h4>Ocea</h4>
+          <ul>
+            <li>51 rue de la Cimaise</li>
+            <li>59650 Villeneuve d'Ascq</li>
+            <li>03.20.47.03.03</li>
+            <li>accueil at oceaclub.com</li>
+          </ul>
+        </section>
 
-    <section>
-      <h4>Ocea Sport</h4>
-      <ul>
-        <li><a href="#">Le plannig</a></li>
-        <li><a href="#">Les cours</a></li>
-        <li><a href="#">Les tarifs</a></li>
-        <li><a href="#">L'offre d'écouverte</a></li>
-        <li><a href="#">Réserver un cours de badminton</a></li>
-        <li><a href="#">Réserver un atelier</a></li>
-        <li><a href="#">Résilier</a></li>
-      </ul>
-    </section>
+        <section class="cardFooter">
+          <h4>Ocea Sport</h4>
+          <ul>
+            <li><a class="colorWhite" href="#">Le plannig</a></li>
+            <li><a class="colorWhite" href="#">Les cours</a></li>
+            <li><a class="colorWhite" href="#">Les tarifs</a></li>
+            <li><a class="colorWhite" href="#">L'offre d'écouverte</a></li>
+            <li><a class="colorWhite" href="#">Réserver un cours de badminton</a></li>
+            <li><a class="colorWhite" href="#">Réserver un atelier</a></li>
+            <li><a class="colorWhite" href="#">Résilier</a></li>
+          </ul>
+        </section>
 
-    <section>
-      <h4>Ocea Esthétique</h4>
-      <ul>
-        <li><a href="#">Solution Beauté Visage</a></li>
-        <li><a href="#">Solution Beauté Corps</a></li>
-        <li><a href="#">Expériences Payot</a></li>
-        <li><a href="#">Modelage "Bien-Etre"</a></li>
-        <li><a href="#">Formules Complète "Forfaits"</a></li>
-        <li><a href="#">Mains, Pieds et Ongles</a></li>
-        <li><a href="#">Epilations</a></li>
-        <li><a href="#">Maquillage, Beauté du regard</a></li>
-      </ul>
-    </section>
+        <section class="cardFooter">
+          <h4>Ocea Esthétique</h4>
+          <ul>
+            <li><a class="colorWhite" href="#">Solution Beauté Visage</a></li>
+            <li><a href="#">Solution Beauté Corps</a></li>
+            <li><a href="#">Expériences Payot</a></li>
+            <li><a href="#">Modelage "Bien-Etre"</a></li>
+            <li><a href="#">Formules Complète "Forfaits"</a></li>
+            <li><a href="#">Mains, Pieds et Ongles</a></li>
+            <li><a href="#">Epilations</a></li>
+            <li><a href="#">Maquillage, Beauté du regard</a></li>
+          </ul>
+        </section>
 
-    <section>
-      <h4>Ocea sun</h4>
-      <ul>
-        <li><a href="#">Les machines</a></li>
-        <li><a href="#">Les tarifs</a></li>
-        <li><a href="#">Les produits</a></li>
-        <li><a href="#">Réservé une séance</a></li>
-      </ul>
-    </section>
+        <section class="cardFooter">
+          <h4>Ocea sun</h4>
+          <ul>
+            <li><a href="#">Les machines</a></li>
+            <li><a href="#">Les tarifs</a></li>
+            <li><a href="#">Les produits</a></li>
+            <li><a href="#">Réservé une séance</a></li>
+          </ul>
+        </section>
+      </div>
 
-    <div class="">
-      <p>© quentin duponcheel- Pour la formation simplon Adep 2018/2019</p>
+      <div class="copyright colorWhite">
+        <p>© quentin duponcheel - Pour la formation simplon Adep 2018/2019</p>
+      </div>
     </div>
 
   </footer>

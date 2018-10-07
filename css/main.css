@@ -96,21 +96,361 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* bar fixed */
-.searchBar {
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~bar fixed~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.blockFixe {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: white;
+  height: 5vh;
+  border-bottom: solid 1px #e5e5e5;
+  z-index: 1;
 }
 
-/* start main styles */
+.searchBar {
+  position: fixed;
+  top: 0;
+  width: 75%;
+  height: 5vh;
+  margin-left: 12.5%;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+
+.spaceIcon {
+  width: 8em;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 100%;
+}
+
+.facebook {
+  color: #444;
+  opacity: .5;
+}
+
+.envelope {
+  color: #444;
+  opacity: .5;
+}
+
+.borderIcon {
+  border: 1px solid #e5e5e5;
+}
+
+.map {
+  color: #444;
+  opacity: .5;
+}
+
+.buttonFixe {
+  background-color: #ed008c;
+  border: none;
+  color: white;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.backgroundPink {
+  background-color: #ed008c;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start utility styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~é */
+
+body {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.marginA {
+  margin: auto;
+}
+
+.colorPink {
+  color: #ed008c;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorBlack {
+  color: black;
+}
+
+.backgroundColorGrey {
+  background-color: #4c4c4c;
+}
+
+.card {
+  width: 20%;
+  margin: auto;
+  align-items: center;
+  justify-content:space-between;
+
+}
+
+.textAlign {
+  text-align: center;
+}
+
+.marginTop {
+  margin-top: 0;
+}
+
+.marginBlock {
+  margin: 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4 {
+  margin: 0.5em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~end utility styles~~~~~~~~~~~~~~~~~~~~~~~~~~~é~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~start header styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.list {
+  list-style-type: none;
+  margin-top: 9vh;
+}
+
+.sizeNavbar {
+  width: 75%;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.designA {
+  color: #444;
+  transition: .2s;
+}
+
+.designA:hover {
+  color: #ed008c;
+}
+
+.sizeLi {
+  justify-content: center;
+  margin-left: 2em;
+  padding-right: 2em;
+}
+
+.borderRight {
+  border-right: solid black 1px;
+}
+
+div#slider { width: 150%; max-width: 100%;}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+
+div#slider figure img { width: 20%; height: auto; float: left;}
+
+div#slider { width: 100%; max-width: 100%; overflow: hidden; height: 73vh; position: relative;}
+
+.textImg {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.sizeParagrapheImg {
+  width: 88%;
+  margin: auto;
+  line-height: 30px;
+}
+
+.Bienvenue {
+  float: right;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~end header styles~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~start footer styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+h4 {
+  margin: 2em 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li{
+  list-style-type: none;
+}
+
+footer ul li a{
+  color: white;
+}
+
+.sizeFooter {
+  width: 75%;
+  margin:auto;
+  padding-bottom: 2em;
+}
+
+.cardFooter {
+  width: 25%;
+}
+
+.copyright {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-top: solid 1px white;
+  padding: 1em 0 2em 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~end footer styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~start main styles~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.sizeCard {
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
 
 .iconeSeven {
   margin: 0;
   text-align: center;
 }
 
-/* end main styles */
+.aButton {
+  background-color: #ffff00;
+  border: solid 1px #ffff00;
+  border-radius: 4px;
+  padding: 0.5em 1.5em;
+  color: Black;
+}
+
+/* block vidéo */
+
+.blockVideo {
+  width: 75%;
+  margin: auto;
+}
+
+.marginVideo {
+  margin-bottom: 4em;
+}
+
+/* card section */
+
+.containerCard {
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+  background-color:
+}
+
+.paddingCard {
+  padding: 2em 0;
+}
+
+.cardPicture {
+  width: 23%;
+}
+
+.opacityTitle {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.picture {
+  width: 100%;
+}
+
+.buttonWhite {
+  background-color: white;
+  width: 50%;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+}
+
+/* timetable */
+
+.sizeTimetable {
+  width: 75%;
+  margin:auto;
+}
+
+.horaires {
+  width: 50%;
+}
+
+.adresse {
+  width: 50%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~end main styles~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 
